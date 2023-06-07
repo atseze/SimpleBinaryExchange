@@ -1,0 +1,73 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "cancel",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "doExchange",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_partner",
+						"type": "address"
+					}
+				],
+				"name": "nominate",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\SimpleBinaryExchange.sol": "SimpleBinaryExchange"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\SimpleBinaryExchange.sol": {
+			"keccak256": "0x1283af388cbcd37811d67543bdbde3943dd4d0319ce056c0ea08406f8ccd4722",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1a735fb00f94afefa8bd3a315008da89b41b5b6eca13807df5205e2380e77090",
+				"dweb:/ipfs/QmST1UEBj91rbaWvrST1KAs61n3DzqunKBVTs7U3kFugrb"
+			]
+		}
+	},
+	"version": 1
+}
