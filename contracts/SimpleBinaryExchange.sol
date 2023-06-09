@@ -6,9 +6,10 @@ contract SimpleBinaryExchange {
         address payable partner;
         uint value;
     }
-    mapping(address => Participation) participants;
+    mapping(address => Participation) public participants;
 
     function nominate(address payable _partner) public payable {
+        require(msg.sender != _partner, "The nominate must be different from you!");
         require(msg.value > 0, "The value must be greater than zero!");
         Participation memory participation = participants[msg.sender];
         require(
@@ -27,7 +28,7 @@ contract SimpleBinaryExchange {
         require(thatSide.partner != address(0), "You have no pair!");
         require(thisSide.value == thatSide.value, "Not the same value!");
         require(
-            thisSide.partner == thatSide.partner,
+            msg.sender == thatSide.partner,
             "Partners does not match!"
         );
 
